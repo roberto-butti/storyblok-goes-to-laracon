@@ -23,3 +23,18 @@ In this short article https://dev.to/robertobutti/how-to-set-up-a-storyblok-spac
 - Pick the Access Token from the new Space
 
 > The access token will be useful later for setting up the integration
+
+## Setting Environment Variables
+
+In the `config/storyblok.php` :
+
+```php
+return [
+    'apiKey' => env('STORYBLOK_API_KEY', ''),
+    'draft' => env('STORYBLOK_DRAFT', false),
+];
+```
+
+You can set the values in the `.env` file. For some examples, see the `.env.example` file.
+
+So, you can get the config via: `config("storyblok.apiKey)`
