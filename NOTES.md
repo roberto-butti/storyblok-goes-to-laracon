@@ -38,3 +38,9 @@ return [
 You can set the values in the `.env` file. For some examples, see the `.env.example` file.
 
 So, you can get the config via: `config("storyblok.apiKey)`
+
+## Installing Storyblok Content API Client
+
+```shell
+composer require storyblok/php-content-api-client
+```
